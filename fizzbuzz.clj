@@ -6,4 +6,23 @@
 
 ;For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
 
-(defn fizzbuzz)
+
+(defn fizz?
+  [n]
+  (= 0 (mod n 3)))
+
+(defn buzz?
+  [n]
+  (= 0 (mod n 5)))
+
+(defn fizzbuzz-decider
+  [num]
+  (cond
+    (and (fizz? num) (buzz? num)) "FizzBuzz"
+    (fizz? num) "Fizz"
+    (buzz? num) "Buzz"
+    :else num))
+
+(defn fizzbuzz
+  [num]
+  (doseq [x (map fizzbuzz-decider (range 1 (+ num 1)))] (println x)))
