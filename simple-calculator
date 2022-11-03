@@ -1,0 +1,3 @@
+(defn calculator
+[operation a b]
+(a operation b))
