@@ -9,9 +9,10 @@ Celsius to Fahrenheit Conversion	°F = °C × 9/5 + 32
 
 Fahrenheit to Celsius Conversion	°C = (°F − 32) × 5/9
 
-#calculator
+# calculator
+calculator for the 4 basic operations
 
-#fizzbuzz
+# fizzbuzz
 Write a short program that prints each number from 1 to 100 on a new line. 
 
 For each multiple of 3, print "Fizz" instead of the number. 
